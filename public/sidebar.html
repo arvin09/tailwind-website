@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="relative min-h-screen md:flex font-body">
+        <!-- mobile menu bar -->
+        <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+            <!-- logo -->
+            <a href="#" class="p-4 text-white flex items-center space-x-2 font-bold ">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+                <span class="text-2xl font-extrabold uppercase">
+                    Techy Aries
+                </span>
+            </a>
+
+            <button id="mobile" class="p-4 focus:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- mobile menu button -->
+        </div>
+        <!-- sidebar -->
+        <div id="sidebar" class="bg-blue-900 text-blue-100 w-64 space-y-6 px-2 py-7 absolute inset-y-0 left-0 transform -translate-x-full transition duration-500 ease-in-out md:relative md:translate-x-0">
+            <!-- logo -->
+            <a href="#" class="text-white flex items-center space-x-2">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+                <span class="text-2xl font-extrabold uppercase">
+                    Techy Aries
+                </span>
+
+            </a>
+            <!-- nav -->
+            <nav class="uppercase">
+                <a href="#" class="block py-2 5 px-4 rounded hover:bg-blue-700 hover:text-white transition  duration-200">
+                    Home
+                </a>
+                <a href="" class="block py-2 5 px-4 rounded hover:bg-blue-700 hover:text-white transition  duration-200">About</a>
+                <a href="" class="block py-2 5 px-4 rounded hover:bg-blue-700 hover:text-white transition  duration-200">Features</a>
+                <a href="" class="block py-2 5 px-4 file:rounded hover:bg-blue-700 hover:text-white transition  duration-200">Pricing</a>
+            </nav>
+        </div>
+
+        <!-- content -->
+        <div class="flex-1 p-10 text-2xl font-bold">
+            content goes here
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
